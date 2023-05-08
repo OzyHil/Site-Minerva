@@ -1,14 +1,6 @@
-.tudo{
-    /* -webkit-filter: blur(15px);
-    -moz-filter: blur(15px);
-    -o-filter: blur(15px);
-    -ms-filter: blur(15px);
-    filter: blur(5px)  */
-}
-
 .bloco-form{
     visibility: hidden;
-    background-color: rgba(187, 203, 247, 0.776);
+    background-color: rgba(255, 255, 255, 0.776);
     display: flex;
     position: fixed;
     max-width: 100vw;
@@ -31,6 +23,11 @@
     padding: 20px 40px 60px;
     border-radius: 10px;
     text-align: center;
+}
+
+.formC{
+    height: 480px;
+    visibility: hidden;
 }
 
 .formulario::after{
@@ -81,7 +78,7 @@
     border-radius: 10px; 
 }
 
-#entrar{
+#entrar, #botaoCadastrar {
     margin-top: 10px;
     margin-left: 35%;
     width: 30%; margin-bottom: 10px; 
