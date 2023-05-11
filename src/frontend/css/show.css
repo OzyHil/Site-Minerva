@@ -1,23 +1,46 @@
-.conteudo{
+.conteudo {
     border: 2px solid rgb(242, 88, 173);
-    max-width: 100%;
+    max-width: 70vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+    position: absolute;
+    left: 30vw;
+    z-index: -1;
+    margin-top: 14vh;
 }
-.bloco1{
-    max-width: 50%;
-    height: 70vh;
-    background-color:  rgb(160, 231, 229);
+
+.menuLateral {
+    position: fixed;
+    background: linear-gradient(315deg, #2ea656ee, #8ee3d7c9, #b0a7eac9);
+    height: 100vh;
+    width: 18.3vw;
+    z-index: -1;
+    float: inline-end;
+}
+
+.subL{
+    margin-top: 12vh;
+    position: relative;
+    width: 90%;
+    height: 50px;
+    border: 3px solid purple;
+}
+
+.bloco {
+    width: 720px;
+    background: linear-gradient(315deg, #f4f6f5b6, #ecf1fc);
+    display: flex;
+    flex-direction: column;
     /* float: right;   o elemento fica grudado na direita*/
 }
 
-.bloco2{
-    max-width: 75%;
-    height: 70vh;
-    background-color:  rgb(255, 5, 5)
-}
+.fotoConteudo {
+    position: relative;
+    width: 100%;
 
-.bloco3{
-    /* visibility: hidden; */
-    max-width: 100%;
-    height: 70vh;
-    background-color:  rgb(246, 242, 130)
 }

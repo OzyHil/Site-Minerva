@@ -1,4 +1,4 @@
-.bloco-form{
+.bloco-form {
     visibility: hidden;
     background-color: rgba(255, 255, 255, 0.776);
     display: flex;
@@ -12,9 +12,10 @@
     justify-content: center;
 }
 
-.formulario{
-    box-sizing: border-box; /*??? */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.formulario {
+    box-sizing: border-box;
+    /*??? */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
     background: rgb(252, 242, 242);
     border: 2px solid rgba(0, 0, 0, 0.483);
@@ -25,37 +26,38 @@
     text-align: center;
 }
 
-.formC{
+.formC {
     height: 480px;
     visibility: hidden;
 }
 
-.formulario::after{
+.formulario::after {
     content: "";
     position: absolute;
     top: -8px;
     right: -2px;
     bottom: -8px;
     left: -2px;
-    background: linear-gradient(315deg, #e91363, #5d02ff);
+    /* background: linear-gradient(315deg, #e91363, #5d02ff); */
+    background: linear-gradient(315deg, #13e989, #6a84bd);
     z-index: -1;
     transform: skew(2deg, 1deg);
     border-radius: 20px;
 }
 
-.formulario h1{
+.formulario h1 {
     color: #4a7bc9;
     font-weight: 10px;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 
-.formulario .entrada{
+.formulario .entrada {
     margin-top: 15px;
     text-align: left;
 }
 
-.formulario .entrada .inputBox label{
+.formulario .entrada .inputBox label {
     display: block;
     color: #4a7bc9;
     margin-bottom: 5px;
@@ -63,7 +65,7 @@
     letter-spacing: 1px;
 }
 
-.formulario .entrada .inputBox input{
+.formulario .entrada .inputBox input {
     position: relative;
     width: 100%;
     height: 40px;
@@ -71,15 +73,17 @@
     border: none;
     outline: none;
     padding: 5px 5px;
-    background: linear-gradient(315deg, #e91362c3, #5d02ff);
-    /* background: linear-gradient(315deg, #e9136217, #5f02ff26); */
+    /* background: linear-gradient(315deg, #e91362c3, #5d02ff); */
+    background: linear-gradient(315deg, #359785c3, #256212);
     color: #FFF;
     font-size: 15px;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
-#entrar, #botaoCadastrar {
+#entrar,
+#botaoCadastrar {
     margin-top: 10px;
     margin-left: 35%;
-    width: 30%; margin-bottom: 10px; 
+    width: 30%;
+    margin-bottom: 10px;
 }

@@ -1,46 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./frontend/images/coruja.png">
     <title>Minerva</title>
-    <script>
-        var time = new Date();
-        console.log(time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds());
-    </script>
     <link rel="stylesheet" href="./frontend/css/body.css">
     <link rel="stylesheet" href="./frontend/css/navegacao.css">
     <link rel="stylesheet" href="./frontend/css/show.css">
     <link rel="stylesheet" href="./frontend/css/form.css">
-    
+    <link rel="stylesheet" href="./frontend/css/carrossel.css">
+    <link rel="stylesheet" href="./frontend/css/carrossel.css">
+
 </head>
+
 <body>
-    <div class="tudo" onclick="mostrarTela()"> 
+    <div class="tudo">
         <div class="navegacao">
             <div class="moldura">
-                <a href="">
-                    <img class="logo" src="./frontend/images/coruja.png" alt="coruja-icon">   
-                </a>
-                <h2 class="nome">Minerva</h2>
+                <a class="logotipo" href="">
+                    <img class="logo" src="./frontend/images/coruja.png" alt="coruja-icon">
+                    <h2 class="nome">Minerva</h2>
+                </a>           
             </div>
             <div class="login">
-                    <div class="signUp">
-                        <h2>Sign up</h2>
-                    </div>                 
-                    <div class="signIn" onclick="mostrarForm()">
-                        <h2>Sign in</h2>                   
-                    </div>  
+                <div class="signUp" onclick="mostrarFormCad()">
+                    <h2>Sign up</h2>
+                </div>
+                <div class="signIn" onclick="mostrarFormL()">
+                    <h2>Sign in</h2>
+                </div>
             </div>
         </div>
         <div class="conteudo">
-            <div class="bloco1"> parte do carrossel</div>
+            <div class="bloco1">
+                <div class="carrossel">
+                    <img class="imagem visivel"
+                    src="/src/frontend/images/carrossel/joel-ellie-the-last-of-us-series-4k-wallpaper-uhdpaper.com-782@1@j.jpg"
+                    alt="Ellie e Joel abraçados">
+    
+                <img class="imagem"
+                    src="/src/frontend/images/carrossel/joel-ellie-the-last-of-us-series-4k-wallpaper-uhdpaper.com-781@1@j.jpg"
+                    alt="Personagens The Last of Us">
+    
+                <img class="imagem"
+                    src="/src/frontend/images/carrossel/the-last-of-us-series-joel-pedro-pascal-4k-wallpaper-uhdpaper.com-772@1@j.jpg"
+                    alt="Joel olhando paro o lado">
+    
+                <img class="imagem" src="/src/frontend/images/carrossel/8844570.jpg" alt="Ellie e Tessie se olhando">
+    
+                <img class="imagem" src="/src/frontend/images/carrossel/the-last-of-us-series-4k-wallpaper-uhdpaper.com-325@1@j.jpg"
+                    alt="Ellie e Joel caminhando em uma cidade destruida">
+    
+                <img class="imagem" src="/src/frontend/images/carrossel/8844566.jpg"
+                    alt="Joel segurando uma lanterna ligada na mão esquerda">  
+    
+                    <div class="botoes-carrossel">
+                        <button class="botao selecionado"></button>
+                        <button class="botao"></button>
+                        <button class="botao"></button>
+                        <button class="botao"></button>
+                        <button class="botao"></button>
+                        <button class="botao"></button>
+                    </div>
+            </div>
+    
+            </div>
             <div class="bloco2"> apresentar amostra do site</div>
-            <div class="bloco3"> mais alguma coisa</div> 
+            <div class="bloco3">
+                <img src="/src/frontend/images/giphy.gif" alt="">
+                <p>Este site está sendo feito por mim, Hilquias</p>
+            </div>
         </div>
     </div>
-     <!-- mini tela de formulario login/registrar -->
     <div class="bloco-form">
         <div class="formulario formL">
             <h1>Login</h1>
@@ -51,16 +85,16 @@
                 </div>
                 <div class="inputBox">
                     <label for=""> Senha</label>
-                    <input type="password">                
+                    <input type="password">
                 </div>
-                <div class="inputBox" >
+                <div class="inputBox">
                     <input id="entrar" type="submit" name="" value="Entrar">
                 </div>
             </div>
             <p class="esquecer"> Não tem login? <a class="" onclick="mostrarFormC()" href="#"> Registrar-se</a></p>
         </div>
         <div class="formulario formC">
-            <h1>Login</h1>
+            <h1>Cadastro</h1>
             <div class="entrada">
                 <div class="inputBox">
                     <label for=""> Nome de Usuário</label>
@@ -72,15 +106,16 @@
                 </div>
                 <div class="inputBox">
                     <label for=""> Senha</label>
-                    <input type="password">                
+                    <input type="password">
                 </div>
-                <div class="inputBox" >
+                <div class="inputBox">
                     <input id="botaoCadastrar" type="submit" name="" value="Cadastrar">
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 </body>
 <script src="./frontend/js/form.js"></script>
-</html>
+<script src="./frontend/js/carrossel.js"></script>
 
+</html>
